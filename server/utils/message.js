@@ -1,13 +1,10 @@
-//  function generateMessage (from,text){
-    
-//       this.from = from,
-//         this.text =text,
-//         createdAt =  new Date().getTime()
-   
-// };
-
-
-//module.exports = {generateMessage};
+var generateLocationMessage = (from,latitude,longitude) => {
+  return {
+    from,
+    url:`https://www.google.com/maps?q=${latitude},${longitude}`,
+    createdAt: new Date().getTime()
+  };
+};
 
 function generateMessage (from,text){
     return {
@@ -19,4 +16,4 @@ function generateMessage (from,text){
 };
 
 
-module.exports = {generateMessage};
+module.exports = {generateMessage,generateLocationMessage};
