@@ -23,13 +23,13 @@ hr {
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
+  
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 25%;
   opacity: 0.9;
 }
 
@@ -42,11 +42,18 @@ button:hover {
   padding: 14px 20px;
   background-color: #f44336;
 }
+#loginbtn, #check{
+  
+  background-color:green;
+}
+.signupbtn{
+  background-color:grey;
+}
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.cancelbtn, .signupbtn,.loginbtn {
   float: left;
-  width: 50%;
+  width: 25%;
 }
 
 /* Add padding to container elements */

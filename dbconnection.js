@@ -7,4 +7,6 @@ var connection = mysql.createPool({
     database: 'parul'
 
 });
+
+    
 module.exports = connection;

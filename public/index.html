@@ -1,79 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Login </title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-
-</head>
-
+<html>
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
 <body>
 
-    <div class="limiter">
-        <div class="container-login100">
-            <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-                <form class="login100-form validate-form" action="chat.html">
-                    <span class="login100-form-title p-b-49">
-                        Login
-                    </span>
+<form  method="post" action="/register" style="border:1px solid #ccc">
+  <div class="container">
+    <h2>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="Email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="firstname" required>
+    
 
-                    <div class="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
-                        <span class="label-input100">Username</span>
-                        <input class="input100" type="text" name="username" placeholder="username">
+    <label for="Name"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" name="lastname" required>
 
-                    </div>
+    <label for="Username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+    <div><button type="button" id="check">Check</button></div>
 
-                    <div class="wrap-input100 validate-input" data-validate="Password is required">
-                        <span class="label-input100">Password</span>
-                        <input class="input100" type="password" name="pass" placeholder=" password">
-                    </div>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
 
-                    <div class="text-right p-t-8 p-b-31">
-                        <a href="#">
-                            Forgot password?
-                        </a>
-                    </div>
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    
 
-                    <div class="container-login100-form-btn">
-                        <div class="wrap-login100-form-btn">
-                            <div class="login100-form-bgbtn"></div>
-                            <button class="login100-form-btn">
-                                Login
-                            </button>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="flex-col-c p-t-75">
-                        <div class="container-login100-form-btn">
-                            <div class="wrap-login100-form-btn">
-                                <div class="login100-form-bgbtn"></div>
-                                <button class="login100-form-btn">
-                                    <a href="signup.html" class="txt2">
-                                        Sign Up
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </form>
-            </div>
-        </div>
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="submit" id="loginbtn">login</button>
     </div>
-
-
-    <script src="/js/libs/jquery-3.4.1.min.js"></script>
-    <script src="/js/libs/deparam.js"></script>
+  </div>
+</form>
 
 </body>
-
 </html>
+<script type="text/javascript">
+  document.getElementById("loginbtn").onclick = function () {
+      location.href = "login.html";
+  };
+  
+</script>
